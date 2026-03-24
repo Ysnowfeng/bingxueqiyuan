@@ -2,51 +2,51 @@ import Link from "next/link";
 
 const projects = [
   {
-    name: "fast-api-starter",
-    description: "轻量级 Node.js RESTful API 脚手架，开箱即用的认证、权限、日志方案",
-    tech: ["TypeScript", "Express", "Prisma", "PostgreSQL"],
-    stars: 520,
-    icon: "🚀",
+    name: "冰雪祁缘工作室公约制定",
+    description: "工作室核心规章制度，明确宗旨理念、组织架构、成员权责及纪律要求，为工作室运行提供根本遵循",
+    tech: ["规章制度", "组织建设", "权责规范"],
+    stars: 4,
+    icon: "📜",
     link: "#",
   },
   {
-    name: "vue-dashboard",
-    description: "美观实用的 Vue3 后台管理模板，集成 ECharts 图表和权限控制",
-    tech: ["Vue3", "Pinia", "Element+", "ECharts"],
-    stars: 380,
-    icon: "📊",
+    name: "姚雪豹奖评选体系",
+    description: "工作室专属荣誉表彰体系，制定奖项设立规则、评选流程及表彰标准，激励成员践行抽象精神",
+    tech: ["荣誉表彰", "评选机制", "精神激励"],
+    stars: 4,
+    icon: "🏆",
     link: "#",
   },
   {
-    name: "cli-toolkit",
-    description: "命令行工具开发框架，支持交互式问答、进度条、表格渲染",
-    tech: ["Node.js", "Commander", "Inquirer"],
-    stars: 245,
-    icon: "🛠️",
+    name: "肃清消极怠工专项行动",
+    description: "针对集体任务怠工行为设立专项委员会，建立排查、认定、整改全流程整治工作体系",
+    tech: ["纪律整治", "专项治理", "行为规范"],
+    stars: 4,
+    icon: "🔍",
     link: "#",
   },
   {
-    name: "react-hook-utils",
-    description: "实用的 React Hooks 工具库，包含 useDebounce、useStorage 等常用 hooks",
-    tech: ["React", "TypeScript", "Rollup"],
-    stars: 890,
-    icon: "⚓",
+    name: "工作室组织架构搭建",
+    description: "构建全员大会、常务会议及各类专项委员会的组织体系，明确各机构职责与运行机制",
+    tech: ["组织架构", "权责划分", "民主决策"],
+    stars: 4,
+    icon: "🏛️",
     link: "#",
   },
   {
-    name: "mini-orm",
-    description: "轻量级 ORM 库，支持链式调用、事务、关联查询",
-    tech: ["TypeScript", "Knex"],
-    stars: 156,
-    icon: "💾",
+    name: "外卖失窃排查行动",
+    description: "制定诱饵排查实施计划，建立工作室财物保护机制，规范成员财产行为与纠纷解决方式",
+    tech: ["财产纪律", "安全防控", "纠纷调解"],
+    stars: 4,
+    icon: "🚨",
     link: "#",
   },
   {
-    name: "blog-cms",
-    description: "基于 Next.js 的博客 CMS 系统，支持 Markdown 编辑和主题切换",
-    tech: ["Next.js", "MDX", "TailwindCSS"],
-    stars: 420,
-    icon: "✍️",
+    name: "工作室视觉标识体系",
+    description: "设计蓝金配色工作室标志徽，打造公章等权威象征物，确立工作室专属视觉与身份标识",
+    tech: ["视觉设计", "标识建设", "品牌塑造"],
+    stars: 4,
+    icon: "🖼️",
     link: "#",
   },
 ];
@@ -57,9 +57,9 @@ export default function Projects() {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <section className="mb-16">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4">开源项目</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4">工作室建设项目</h1>
           <p className="text-muted-foreground text-lg">
-            热爱开源，分享代码 💻
+            深耕建设，凝聚力量 ✊
           </p>
           <div className="h-1 w-20 bg-accent rounded mt-4" />
         </section>
@@ -76,7 +76,7 @@ export default function Projects() {
                 <a
                   href={project.link}
                   className="text-muted-foreground hover:text-accent transition-colors"
-                  title="查看源码"
+                  title="查看详情"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -108,18 +108,18 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* GitHub CTA */}
+        {/* Studio CTA */}
         <div className="mt-12 text-center py-8 bg-muted/30 rounded-xl">
           <p className="text-muted-foreground mb-4">
-            想看更多？访问我的 GitHub
+            了解更多工作室建设详情
           </p>
           <a
-            href="https://github.com"
-            target="_blank"
+            href="#about"
+            target="_self"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-accent hover:underline font-medium"
           >
-            <span>🐙</span> github.com/xiaozeng
+            <span>❄️</span> 冰雪祁缘工作室详情
           </a>
         </div>
       </div>
