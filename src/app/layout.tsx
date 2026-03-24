@@ -8,13 +8,13 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  title: "小增老师 | 全栈开发者",
-  description: "热爱技术，专注于构建优雅的 Web 应用。喜欢分享 Node.js、TypeScript、React 等技术心得。",
-  keywords: ["全栈开发", "Node.js", "TypeScript", "React", "Vue", "技术博客"],
-  authors: [{ name: "小增老师" }],
+  title: "曾老师 | CTF大佬",
+  description: "热爱技术，喜欢分享CTF比赛心得",
+  keywords: ["全栈开发", "Web", "Pwn", "Reverse", "Misc", "Crypto"],
+  authors: [{ name: "曾老师" }],
   openGraph: {
-    title: "小增老师 | 全栈开发者",
-    description: "热爱技术，专注于构建优雅的 Web 应用",
+    title: "曾老师 | CTF大佬",
+    description: "热爱技术",
     type: "website",
     locale: "zh_CN",
   },
