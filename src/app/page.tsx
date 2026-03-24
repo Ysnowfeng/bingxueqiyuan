@@ -19,20 +19,20 @@ export default function Home() {
 
           {/* Heading */}
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-            你好，我是曾老师 <span className="wave">👋</span>
+            你好，这里是冰雪奇缘工作室 <span className="wave">👋</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl sm:text-2xl text-accent font-medium mb-6">
-            全栈开发者 & CTFer
+            赤石开发者 & 室史记录者
           </p>
 
           {/* Bio */}
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-            热爱 <span className="text-accent-purple font-medium">CTF</span> 和{" "}
+            热爱 <span className="text-accent-purple font-medium">抽象</span> 和{" "}
             <span className="text-accent-purple font-medium">艺术</span>
-          喜欢分享技术心得，坚信{" "}
-            <span className="text-accent-purple font-medium">代码即艺术</span>。
+          喜欢分享赤石视频，坚信{" "}
+            <span className="text-accent-purple font-medium">抽象即艺术</span>。
           </p>
 
           {/* CTA Buttons */}
@@ -41,13 +41,13 @@ export default function Home() {
               href="/blog"
               className="px-6 py-3 bg-accent text-background font-medium rounded-lg hover:bg-accent/90 transition-colors"
             >
-              阅读博客
+              观看赤石视频
             </Link>
             <Link
               href="/projects"
               className="px-6 py-3 border border-border text-foreground font-medium rounded-lg hover:bg-muted transition-colors"
             >
-              查看项目
+              查看室史
             </Link>
           </div>
         </div>
@@ -57,23 +57,23 @@ export default function Home() {
       <section className="py-20 px-4 bg-muted/30">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl font-bold text-center mb-12">
-            <span className="text-accent">#</span> 技术栈
+            <span className="text-accent">#</span> 关键词
           </h2>
           
           <div className="flex flex-wrap gap-3 justify-center">
             {[
-              { label: "React", color: "hover:border-cyan-400 hover:text-cyan-400" },
-              { label: "Vue.js", color: "hover:border-green-400 hover:text-green-400" },
-              { label: "TypeScript", color: "hover:border-blue-400 hover:text-blue-400" },
-              { label: "Node.js", color: "hover:border-green-500 hover:text-green-500" },
-              { label: "Next.js", color: "hover:border-white hover:text-white" },
-              { label: "NestJS", color: "hover:border-red-400 hover:text-red-400" },
-              { label: "PostgreSQL", color: "hover:border-blue-500 hover:text-blue-500" },
-              { label: "MongoDB", color: "hover:border-green-600 hover:text-green-600" },
-              { label: "Docker", color: "hover:border-blue-400 hover:text-blue-400" },
-              { label: "Git", color: "hover:border-orange-500 hover:text-orange-500" },
-              { label: "AWS", color: "hover:border-yellow-500 hover:text-yellow-500" },
-              { label: "Linux", color: "hover:border-gray-300 hover:text-gray-300" },
+              { label: "冰", color: "hover:border-cyan-400 hover:text-cyan-400" },
+              { label: "雪", color: "hover:border-green-400 hover:text-green-400" },
+              { label: "祁", color: "hover:border-blue-400 hover:text-blue-400" },
+              { label: "缘", color: "hover:border-green-500 hover:text-green-500" },
+              { label: "冰雪祁缘", color: "hover:border-white hover:text-white" },
+              { label: "生于安徽", color: "hover:border-red-400 hover:text-red-400" },
+              { label: "赤石科技", color: "hover:border-blue-500 hover:text-blue-500" },
+              { label: "记录生活", color: "hover:border-green-600 hover:text-green-600" },
+              { label: "室史", color: "hover:border-blue-400 hover:text-blue-400" },
+              { label: "三热心理咨询室", color: "hover:border-orange-500 hover:text-orange-500" },
+              { label: "9-6-30抽象工作室", color: "hover:border-yellow-500 hover:text-yellow-500" },
+              { label: "抽象工作室", color: "hover:border-gray-300 hover:text-gray-300" },
             ].map((skill) => (
               <span
                 key={skill.label}
@@ -91,7 +91,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center justify-between mb-12">
             <h2 className="text-2xl font-bold">
-              <span className="text-accent">#</span> 最新文章
+              <span className="text-accent">#</span> 最新视频
             </h2>
             <Link
               href="/blog"
@@ -104,16 +104,16 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                title: "TypeScript 5.0 装饰器完全指南",
-                date: "2026-03-20",
-                excerpt: "深入解析 TC39 装饰器提案，探讨如何在现代 TypeScript 项目中优雅地使用装饰器模式...",
-                tags: ["TypeScript", "装饰器"],
+                title: "冰雪祁缘工作室室史",
+                date: "2026-03-24",
+                excerpt: "记得学习、一直记录",
+                tags: ["室史", "生于安徽", "记录者"],
               },
               {
-                title: "从零打造高可用微服务架构",
-                date: "2026-03-15",
-                excerpt: "基于 NestJS + Docker + K8s 的微服务实战经验总结，涵盖服务发现、熔断降级...",
-                tags: ["架构", "微服务"],
+                title: "冰雪祁缘工作室精品小视频",
+                date: "2026-03-24",
+                excerpt: "认真观看、与人分享",
+                tags: ["精品", "视频"],
               },
             ].map((post, index) => (
               <article
@@ -143,9 +143,9 @@ export default function Home() {
       {/* Contact CTA */}
       <section className="py-20 px-4 bg-muted/30">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-4">有问题或想法？</h2>
+          <h2 className="text-2xl font-bold mb-4">有最新精彩小视频？</h2>
           <p className="text-muted-foreground mb-8">
-            随时欢迎来找我交流技术、讨论合作，或者只是聊聊。
+            随时欢迎来找我交流、讨论合作，或者只是聊聊。
           </p>
           <Link
             href="/contact"
