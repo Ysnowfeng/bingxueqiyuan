@@ -1,11 +1,13 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
+import { cookies } from "next/headers";
+import bcrypt from "bcryptjs";
 import connectDB from "@/lib/db";
 import { Admin } from "@/models/Admin";
 
 const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key-change-this";
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
   try {
     await connectDB();
     const { username, password, action } = await request.json();
@@ -16,7 +18,11 @@ export async function POST(request: Request) {
       if (existing) {
         return NextResponse.json({ error: "用户已存在" }, { status: 400 });
       }
-      const admin = await Admin.create({ username, password });
+      
+      // Hash password manually
+      const hashedPassword = await bcrypt.hash(password, 12);
+      const admin = await Admin.create({ username, password: hashedPassword });
+      
       const token = jwt.sign({ id: admin._id, username }, JWT_SECRET, { expiresIn: "7d" });
       
       const response = NextResponse.json({ success: true, message: "注册成功" });
@@ -45,9 +51,11 @@ export async function POST(request: Request) {
   }
 }
 
-export async function GET(request: Request) {
+export async function GET() {
   try {
-    const token = request.cookies.get("admin_token")?.value;
+    const cookieStore = await cookies();
+    const token = cookieStore.get("admin_token")?.value;
+    
     if (!token) {
       return NextResponse.json({ authenticated: false });
     }
