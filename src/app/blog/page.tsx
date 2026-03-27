@@ -10,10 +10,10 @@ export default function Blog() {
             <div>
               <p className="eyebrow">Bulletins & Archive</p>
               <h1 className="font-display mt-4 text-4xl leading-tight text-foreground sm:text-5xl">
-                工作室文告、制度摘要与室史归档
+                工作室公告、制度摘要与室史归档
               </h1>
               <p className="lead mt-6 max-w-3xl">
-                这里不再放模板式博客文章，而是集中展示工作室当前公开可读的制度文告。每篇文告都来自统一的数据文件，口径与首页、关于、项目、联系页保持一致。
+                
               </p>
             </div>
 
@@ -26,9 +26,9 @@ export default function Blog() {
                 </p>
               </div>
               <div className="rounded-[1.6rem] border border-white/10 bg-white/5 p-5">
-                <p className="text-sm text-accent-gold">更新方式</p>
+                <p className="text-sm text-accent-gold">暂时没想到填什么</p>
                 <p className="mt-3 text-sm leading-7 text-muted-foreground">
-                  统一修改 `studio.ts` 后，多页面同步更新，不再出现一页说时间线、一页又另写制度的断裂。
+                  暂时没想到填什么。
                 </p>
               </div>
             </div>

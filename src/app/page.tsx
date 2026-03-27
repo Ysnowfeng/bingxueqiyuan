@@ -23,7 +23,6 @@ export default function Home() {
             <h1 className="font-display mt-5 max-w-4xl text-4xl leading-[1.08] text-foreground sm:text-5xl lg:text-6xl">
               冰雪祁缘工作室
               <br />
-              公开制度站
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-9 text-muted-foreground">
               {studioProfile.description}
