@@ -14,7 +14,7 @@ export async function GET() {
         title: "全栈开发者 & 技术写作者",
         bio: "热爱 Node.js 和 TypeScript，专注于构建优雅的 Web 应用。",
         avatar: "👨‍💻",
-        email: "xiaozeng@example.com",
+        email: "bxqy212@163.com",
         github: "https://github.com",
         twitter: "https://twitter.com",
         juejin: "https://juejin.cn",

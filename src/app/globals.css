@@ -80,6 +80,12 @@ a {
   padding-block: 7rem 5rem;
 }
 
+.section-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .hero-card,
 .glass-card {
   border: 1px solid var(--border);
@@ -109,6 +115,30 @@ a {
 
 .glass-card {
   border-radius: 1.5rem;
+}
+
+.hero-divider {
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.hero-stat {
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 1.35rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015));
+  padding: 1.15rem 1.2rem;
+}
+
+.hero-stat-value {
+  font-family: var(--font-serif-sc), serif;
+  font-size: clamp(1.65rem, 3vw, 2.4rem);
+  line-height: 1;
+  color: var(--foreground);
+}
+
+.panel-soft {
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 1.5rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015));
 }
 
 .eyebrow {
@@ -315,6 +345,10 @@ a {
 @media (max-width: 640px) {
   .page-shell {
     padding-block: 6rem 4rem;
+  }
+
+  .section-stack {
+    gap: 2rem;
   }
 
   .hero-card {

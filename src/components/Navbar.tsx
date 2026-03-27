@@ -45,7 +45,7 @@ export function Navbar() {
                 href={link.href}
                 className={`rounded-full px-4 py-2 text-sm transition-all ${
                   isActive(link.href)
-                    ? "bg-white/10 text-foreground shadow-[inset_0_0_0_1px_rgba(143,211,255,0.24)]"
+                    ? "bg-white/10 text-foreground shadow-[inset_0_0_0_1px_rgba(91,140,255,0.24)]"
                     : "text-muted-foreground hover:bg-white/6 hover:text-foreground"
                 }`}
               >
