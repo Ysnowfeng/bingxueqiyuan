@@ -45,10 +45,10 @@ export default function Contact() {
             <div>
               <p className="eyebrow">Contact & Coordination</p>
               <h1 className="font-display mt-4 text-4xl leading-tight text-foreground sm:text-5xl">
-                站内联络页也遵循同一套制度边界。
+                欢迎与我们联络！
               </h1>
               <p className="lead mt-6 max-w-3xl">
-                联系页不再沿用个人博客式的自我介绍口吻，而是作为 {studioProfile.name}
+                这里是 {studioProfile.name}
                 的公开联络入口，用于接收制度修订建议、室史补录和文告协作请求。
               </p>
             </div>

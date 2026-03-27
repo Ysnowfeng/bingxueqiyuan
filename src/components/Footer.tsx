@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { studioProfile } from "@/data/studio";
 
@@ -10,6 +12,10 @@ const quickLinks = [
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <footer className="mt-20 border-t border-black/8">
@@ -48,9 +54,13 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col gap-3 border-t border-black/8 pt-5 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>© {currentYear} {studioProfile.name}</p>
-          <Link href="#" className="transition-colors hover:text-foreground">
+          <button
+            type="button"
+            onClick={scrollToTop}
+            className="text-left transition-colors hover:text-foreground sm:text-right"
+          >
             返回页首
-          </Link>
+          </button>
         </div>
       </div>
     </footer>
