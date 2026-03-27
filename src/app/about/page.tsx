@@ -20,7 +20,7 @@ export default function About() {
                 这里给出完整的工作室框架。
               </h1>
               <p className="lead mt-6 max-w-3xl">
-                {你好}
+                {studioProfile.description}
               </p>
             </div>
 
@@ -146,7 +146,7 @@ export default function About() {
           </article>
 
           <article className="glass-card p-6 sm:p-8">
-            <p className="eyebrow">完整时间线</p>
+            <p className="eyebrow">重要时间节点</p>
             <h2 className="section-title mt-4">组织沿革、重建、制度与荣誉</h2>
             <div className="timeline-rail mt-8 space-y-6">
               {studioTimeline.map((event) => (
