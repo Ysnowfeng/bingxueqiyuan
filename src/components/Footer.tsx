@@ -60,6 +60,12 @@ export function Footer() {
                   <p>核心理念：{studioProfile.coreValues.join(" / ")}</p>
                   <p>成立时间：{studioProfile.foundedAt}</p>
                   <p>重建时间：{studioProfile.rebuiltAt}</p>
+                  <p>
+                    联络邮箱：
+                    <a href={`mailto:${studioProfile.publicEmail}`} className="ml-1 text-foreground transition-colors hover:text-accent">
+                      {studioProfile.publicEmail}
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>

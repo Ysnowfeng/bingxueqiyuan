@@ -35,13 +35,13 @@ export default function Home() {
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/about"
-                  className="rounded-full bg-[linear-gradient(135deg,rgba(243,199,107,0.95),rgba(143,211,255,0.95))] px-6 py-3 text-sm font-semibold text-slate-950 transition-transform hover:-translate-y-0.5"
+                  className="brand-button px-6 py-3 text-sm font-semibold"
                 >
                   查看制度总览
                 </Link>
                 <Link
                   href="/blog"
-                  className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm text-foreground transition-colors hover:bg-white/10"
+                  className="brand-button-soft px-6 py-3 text-sm"
                 >
                   进入文告归档
                 </Link>

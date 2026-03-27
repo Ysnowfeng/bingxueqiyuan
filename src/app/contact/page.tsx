@@ -70,6 +70,18 @@ export default function Contact() {
           <article className="glass-card p-6 sm:p-8">
             <p className="eyebrow">联络议题</p>
             <h2 className="section-title mt-4">欢迎围绕以下事项来信</h2>
+            <div className="mt-6 rounded-[1.5rem] border border-white/10 bg-white/4 p-5">
+              <p className="text-sm text-muted-foreground">公开联络邮箱</p>
+              <a
+                href={`mailto:${studioProfile.publicEmail}`}
+                className="mt-3 inline-flex text-lg font-semibold text-foreground transition-colors hover:text-accent"
+              >
+                {studioProfile.publicEmail}
+              </a>
+              <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                需要直接邮件联络时，统一发送到该邮箱；站内表单和邮件联络使用同一套处理口径。
+              </p>
+            </div>
             <div className="mt-8 space-y-4">
               {contactTopics.map((topic) => (
                 <article key={topic.title} className="rounded-[1.5rem] border border-white/10 bg-white/4 p-5">
@@ -133,7 +145,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="rounded-full bg-[linear-gradient(135deg,rgba(243,199,107,0.95),rgba(143,211,255,0.95))] px-6 py-3 text-sm font-semibold text-slate-950 transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-70"
+                className="brand-button px-6 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-70"
               >
                 {status === "sending" ? "提交中..." : "提交联络事项"}
               </button>

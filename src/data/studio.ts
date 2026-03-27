@@ -63,6 +63,7 @@ export const studioProfile = {
   ],
   corePurpose: "抽象",
   coreValues: ["平等", "团结"],
+  publicEmail: "bxqy212@163.com",
   visualIdentity:
     "标志徽采用蓝金配色，融合冰雪、雪豹与高铁元素，顶部为金色五角星与放射线，下承金蓝渐变橄榄枝，底部蓝丝带书写“冰雪祁缘”。",
   sealStatement:

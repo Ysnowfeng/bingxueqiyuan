@@ -64,7 +64,7 @@ export default function Blog() {
                   </span>
                   <Link
                     href={`/blog/${document.slug}`}
-                    className="rounded-full bg-[linear-gradient(135deg,rgba(243,199,107,0.95),rgba(143,211,255,0.95))] px-5 py-3 text-sm font-semibold text-slate-950 transition-transform hover:-translate-y-0.5"
+                    className="brand-button px-5 py-3 text-sm font-semibold"
                   >
                     阅读全文
                   </Link>

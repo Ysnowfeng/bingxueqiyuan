@@ -27,7 +27,7 @@ export function Navbar() {
       <div className="site-shell pt-4">
         <div className="glass-card flex items-center justify-between gap-4 px-4 py-3 sm:px-5">
           <Link href="/" className="flex min-w-0 items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(243,199,107,0.38),_rgba(18,33,55,0.1)_52%),linear-gradient(145deg,_rgba(18,49,80,0.95),_rgba(8,18,32,0.94))] text-lg shadow-[0_10px_30px_rgba(0,0,0,0.28)]">
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(91,140,255,0.32),_rgba(17,24,39,0.12)_56%),linear-gradient(145deg,_rgba(30,41,59,0.96),_rgba(8,15,28,0.94))] text-lg shadow-[0_12px_30px_rgba(2,6,23,0.32)]">
               ❄
             </div>
             <div className="min-w-0">
@@ -54,7 +54,7 @@ export function Navbar() {
             ))}
             <Link
               href="/blog"
-              className="ml-2 rounded-full bg-[linear-gradient(135deg,rgba(243,199,107,0.95),rgba(143,211,255,0.95))] px-4 py-2 text-sm font-semibold text-slate-950 transition-transform hover:-translate-y-0.5"
+              className="brand-button ml-2 px-4 py-2 text-sm font-semibold"
             >
               查看公约
             </Link>
@@ -101,7 +101,7 @@ export function Navbar() {
               <Link
                 href="/blog"
                 onClick={() => setIsOpen(false)}
-                className="mt-2 rounded-2xl bg-[linear-gradient(135deg,rgba(243,199,107,0.95),rgba(143,211,255,0.95))] px-4 py-3 text-center text-sm font-semibold text-slate-950"
+                className="brand-button mt-2 rounded-2xl px-4 py-3 text-center text-sm font-semibold"
               >
                 进入制度文告区
               </Link>
