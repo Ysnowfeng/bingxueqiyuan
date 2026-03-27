@@ -7,7 +7,7 @@ const quickLinks = [
   { href: "/about", label: "制度概览" },
   { href: "/blog", label: "文告归档" },
   { href: "/projects", label: "建设项目" },
-  { href: "/contact", label: "站内联络" },
+  { href: "/contact", label: "联络方式" },
 ];
 
 export function Footer() {
