@@ -20,7 +20,7 @@ export default function About() {
                 这里给出完整的工作室框架。
               </h1>
               <p className="lead mt-6 max-w-3xl">
-                {studioProfile.description}
+                
               </p>
             </div>
 
