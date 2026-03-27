@@ -58,7 +58,6 @@ export default function Home() {
               </div>
             </div>
             <p className="text-sm leading-8 text-muted-foreground">
-              当前各页面的时间线、组织、纪律、文告和联络信息，全部以同一份整理数据为准。
             </p>
           </div>
         </section>

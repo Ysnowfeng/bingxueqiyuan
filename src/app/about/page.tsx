@@ -77,7 +77,7 @@ export default function About() {
 
             <div className="mt-8 space-y-4">
               <div className="rounded-[1.5rem] border border-white/10 bg-white/4 p-5">
-                <p className="text-sm text-accent-gold">正式成员权利</p>
+                <p className="text-sm text-accent-gold">成员权利</p>
                 <div className="mt-4 space-y-3">
                   {memberFramework.rights.map((right) => (
                     <p key={right} className="text-sm leading-7 text-muted-foreground">
@@ -128,7 +128,7 @@ export default function About() {
         <section className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <article className="glass-card p-6 sm:p-8">
             <p className="eyebrow">现行成员</p>
-            <h2 className="section-title mt-4">附则中的现行组织名单</h2>
+            <h2 className="section-title mt-4">现行组织名单</h2>
             <div className="mt-8 space-y-4">
               {currentRosters.map((roster) => (
                 <article key={roster.group} className="rounded-[1.5rem] border border-white/10 bg-white/4 p-5">
@@ -147,7 +147,7 @@ export default function About() {
 
           <article className="glass-card p-6 sm:p-8">
             <p className="eyebrow">完整时间线</p>
-            <h2 className="section-title mt-4">组织沿革、重建、制度与荣誉汇总</h2>
+            <h2 className="section-title mt-4">组织沿革、重建、制度与荣誉</h2>
             <div className="timeline-rail mt-8 space-y-6">
               {studioTimeline.map((event) => (
                 <article key={`${event.date}-${event.title}`} className="timeline-item">
