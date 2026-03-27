@@ -23,88 +23,54 @@ export function Navbar() {
   };
 
   return (
-    <nav className="fixed left-0 right-0 top-0 z-50">
-      <div className="site-shell pt-4">
-        <div className="glass-card flex items-center justify-between gap-4 px-4 py-3 sm:px-5">
-          <Link href="/" className="flex min-w-0 items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(91,140,255,0.32),_rgba(17,24,39,0.12)_56%),linear-gradient(145deg,_rgba(30,41,59,0.96),_rgba(8,15,28,0.94))] text-lg shadow-[0_12px_30px_rgba(2,6,23,0.32)]">
-              ❄
-            </div>
-            <div className="min-w-0">
-              <p className="truncate text-sm text-muted-foreground">制度站点</p>
-              <p className="font-display truncate text-base text-foreground sm:text-lg">
-                {studioProfile.name}
-              </p>
-            </div>
+    <nav className="fixed left-0 right-0 top-0 z-50 border-b border-black/8 bg-white/88 backdrop-blur-md">
+      <div className="site-shell">
+        <div className="flex h-17 items-center justify-between gap-6">
+          <Link href="/" className="min-w-0">
+            <p className="text-xs uppercase tracking-[0.28em] text-muted-foreground">Studio Charter</p>
+            <p className="font-display truncate pt-1 text-lg text-foreground">{studioProfile.name}</p>
           </Link>
 
-          <div className="hidden md:flex md:items-center md:gap-2">
+          <div className="hidden items-center gap-7 md:flex">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-full px-4 py-2 text-sm transition-all ${
-                  isActive(link.href)
-                    ? "bg-white/10 text-foreground shadow-[inset_0_0_0_1px_rgba(91,140,255,0.24)]"
-                    : "text-muted-foreground hover:bg-white/6 hover:text-foreground"
+                className={`relative py-2 text-sm transition-colors ${
+                  isActive(link.href) ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {link.label}
+                {isActive(link.href) && <span className="absolute inset-x-0 -bottom-[1px] h-0.5 bg-accent" />}
               </Link>
             ))}
-            <Link
-              href="/blog"
-              className="brand-button ml-2 px-4 py-2 text-sm font-semibold"
-            >
-              查看公约
-            </Link>
           </div>
 
           <button
             type="button"
-            className="rounded-full border border-white/10 p-2 text-muted-foreground transition-colors hover:text-foreground md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
+            className="rounded-full border border-black/10 px-3 py-2 text-sm text-muted-foreground md:hidden"
+            onClick={() => setIsOpen((open) => !open)}
             aria-label="Toggle menu"
           >
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
+            菜单
           </button>
         </div>
 
         {isOpen && (
-          <div className="glass-card mt-3 px-4 py-4 md:hidden">
-            <div className="mb-4 border-b border-white/10 pb-4">
-              <p className="font-display text-lg">{studioProfile.name}</p>
-              <p className="mt-1 text-sm text-muted-foreground">{studioProfile.tagline}</p>
-            </div>
-
-            <div className="flex flex-col gap-2">
+          <div className="border-t border-black/8 py-3 md:hidden">
+            <div className="flex flex-col">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`rounded-2xl px-4 py-3 text-sm transition-colors ${
-                    isActive(link.href)
-                      ? "bg-white/10 text-foreground"
-                      : "text-muted-foreground hover:bg-white/6 hover:text-foreground"
+                  className={`py-3 text-sm ${
+                    isActive(link.href) ? "text-foreground" : "text-muted-foreground"
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href="/blog"
-                onClick={() => setIsOpen(false)}
-                className="brand-button mt-2 rounded-2xl px-4 py-3 text-center text-sm font-semibold"
-              >
-                进入制度文告区
-              </Link>
             </div>
           </div>
         )}
