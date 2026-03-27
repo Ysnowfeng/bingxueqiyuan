@@ -75,19 +75,19 @@ export default function Home() {
 
         <section className="grid gap-12 border-b border-black/8 py-14 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="text-xs uppercase tracking-[0.28em] text-muted-foreground">Overview</p>
-            <h2 className="font-display mt-4 text-3xl text-foreground sm:text-4xl">用一页解释组织是怎么运转的</h2>
+            <p className="text-xs uppercase tracking-[0.28em] text-muted-foreground"> </p>
+            <h2 className="font-display mt-4 text-3xl text-foreground sm:text-4xl">运转方式</h2>
             <p className="mt-5 max-w-xl text-base leading-8 text-muted-foreground">
-              这里不再靠视觉块堆信息，而是直接说明工作室的治理骨架：谁负责决策、谁负责日常运行、谁承担专项审查与整治。
+              工作室的治理骨架：谁负责决策、谁负责日常运行、谁承担专项审查与整治
             </p>
           </div>
 
           <div className="divide-y divide-black/8">
             <div className="py-5 first:pt-0">
               <p className="text-sm text-accent">组织原则</p>
-              <h3 className="mt-2 text-2xl font-semibold text-foreground">平等与团结替代个人化领导</h3>
+              <h3 className="mt-2 text-2xl font-semibold text-foreground">平等与团结</h3>
               <p className="mt-3 text-sm leading-8 text-muted-foreground">
-                重建后不再设置室长，改由全员大会与常务会议协同运转，减少组织对单一角色的依赖。
+                重建后不再设置室长，改由全员大会与常务会议协同运转，减少组织对单一角色的依赖
               </p>
             </div>
 
@@ -108,7 +108,7 @@ export default function Home() {
             <div className="flex items-end justify-between gap-4">
               <div>
                 <p className="text-xs uppercase tracking-[0.28em] text-muted-foreground">Timeline</p>
-                <h2 className="font-display mt-4 text-3xl text-foreground sm:text-4xl">最近制度节点</h2>
+                <h2 className="font-display mt-4 text-3xl text-foreground sm:text-4xl">重要时间节点</h2>
               </div>
               <Link href="/about" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
                 查看全程
@@ -165,7 +165,6 @@ export default function Home() {
             <p className="text-xs uppercase tracking-[0.28em] text-muted-foreground">Discipline</p>
             <h2 className="font-display mt-4 text-3xl text-foreground sm:text-4xl">三大纪律</h2>
             <p className="mt-5 max-w-xl text-base leading-8 text-muted-foreground">
-              公共页面的表达方式、联络边界和制度文本的取舍，全部由语言、财产、保密三项纪律兜底。
             </p>
           </div>
 
@@ -191,7 +190,7 @@ export default function Home() {
               <p className="text-xs uppercase tracking-[0.28em] text-muted-foreground">Initiatives</p>
               <h2 className="font-display mt-4 text-3xl text-foreground sm:text-4xl">建设项目</h2>
               <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground">
-                从公约修订、成员审查到荣誉表彰和专项整治，项目页记录的是规则如何被逐步建立。
+                从公约修订、成员审查到荣誉表彰和专项整治，项目页记录的是规则如何被逐步建立
               </p>
             </div>
             <Link href="/projects" className="text-sm text-muted-foreground transition-colors hover:text-foreground">

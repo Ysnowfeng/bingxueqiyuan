@@ -48,8 +48,7 @@ export default function Contact() {
                 欢迎与我们联络！
               </h1>
               <p className="lead mt-6 max-w-3xl">
-                这里是 {studioProfile.name}
-                的公开联络入口，用于接收制度修订建议、室史补录和文告协作请求。
+                这里是 {studioProfile.name}的公开联络入口，用于接收制度修订建议、室史补录和文告协作请求。
               </p>
             </div>
 
@@ -79,7 +78,7 @@ export default function Contact() {
                 {studioProfile.publicEmail}
               </a>
               <p className="mt-3 text-sm leading-7 text-muted-foreground">
-                需要直接邮件联络时，统一发送到该邮箱；站内表单和邮件联络使用同一套处理口径。
+                需要直接邮件联络时，统一发送到该邮箱。
               </p>
             </div>
             <div className="mt-8 space-y-4">
@@ -107,7 +106,7 @@ export default function Contact() {
                   value={form.name}
                   onChange={(event) => setForm({ ...form, name: event.target.value })}
                   className="w-full rounded-[1.2rem] border border-white/10 bg-white/5 px-4 py-3 text-foreground outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-accent"
-                  placeholder="例如：制度整理人 / 室史补录者"
+                  placeholder="例如：X先生 / Y女士"
                   required
                 />
               </div>

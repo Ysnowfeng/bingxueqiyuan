@@ -12,10 +12,10 @@ export default function Projects() {
               <h1 className="font-display mt-4 text-4xl leading-tight text-foreground sm:text-5xl">
                 工作室建设项目，
                 <br />
-                记录制度如何一步步落地。
+                记录制度如何一步步落地
               </h1>
               <p className="lead mt-6 max-w-3xl">
-                这里展示的不是泛泛而谈的“项目案例”，而是工作室在公约、成员、荣誉、纪律和象征体系上的具体建设动作。每个项目都能追溯到对应文告。
+                展示工作室在公约、成员、荣誉、纪律和象征体系上的具体建设动作
               </p>
             </div>
 
@@ -24,14 +24,14 @@ export default function Projects() {
                 <p className="text-sm text-accent-gold">建设项目数</p>
                 <p className="mt-3 font-display text-4xl text-foreground">{studioInitiatives.length}</p>
                 <p className="mt-3 text-sm leading-7 text-muted-foreground">
-                  从公约修订到专项整治，项目化描述制度落地过程。
+                  从公约修订到专项整治，项目化描述制度落地过程
                 </p>
               </div>
               <div className="rounded-[1.6rem] border border-white/10 bg-white/5 p-5">
                 <p className="text-sm text-accent-gold">可追溯文告</p>
                 <p className="mt-3 font-display text-4xl text-foreground">{studioDocuments.length}</p>
                 <p className="mt-3 text-sm leading-7 text-muted-foreground">
-                  每个建设条目都指向统一文告源，不再单独写一套介绍词。
+                  每个建设条目都指向统一文告源，不再单独写一套介绍词
                 </p>
               </div>
             </div>
@@ -99,8 +99,8 @@ export default function Projects() {
 
         <section className="grid gap-6 lg:grid-cols-[1fr_1fr]">
           <article className="glass-card p-6 sm:p-8">
-            <p className="eyebrow">治理承接</p>
-            <h2 className="section-title mt-4">建设项目由哪些机构承接</h2>
+            <p className="eyebrow">运行模式</p>
+            <h2 className="section-title mt-4">组织机构</h2>
             <div className="mt-8 space-y-4">
               {governanceBodies.slice(0, 4).map((body) => (
                 <article key={body.name} className="rounded-[1.45rem] border border-white/10 bg-white/4 p-5">
@@ -114,7 +114,7 @@ export default function Projects() {
 
           <article className="glass-card p-6 sm:p-8">
             <p className="eyebrow">纪律约束</p>
-            <h2 className="section-title mt-4">所有项目都受三大纪律兜底</h2>
+            <h2 className="section-title mt-4">三大纪律</h2>
             <div className="mt-8 space-y-4">
               {disciplineRules.map((rule) => (
                 <article key={rule.name} className="rounded-[1.45rem] border border-white/10 bg-white/4 p-5">
