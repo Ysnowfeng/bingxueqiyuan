@@ -7,10 +7,10 @@ import { studioProfile } from "@/data/studio";
 
 const navLinks = [
   { href: "/", label: "首页" },
-  { href: "/about", label: "制度概览" },
-  { href: "/blog", label: "公告归档" },
-  { href: "/projects", label: "建设项目" },
-  { href: "/contact", label: "联络方式" },
+  { href: "/about", label: "制度" },
+  { href: "/blog", label: "公告" },
+  { href: "/projects", label: "建设" },
+  { href: "/contact", label: "联系" },
 ];
 
 export function Navbar() {

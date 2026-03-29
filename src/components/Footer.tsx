@@ -4,10 +4,10 @@ import Link from "next/link";
 import { studioProfile } from "@/data/studio";
 
 const quickLinks = [
-  { href: "/about", label: "制度概览" },
-  { href: "/blog", label: "文告归档" },
-  { href: "/projects", label: "建设项目" },
-  { href: "/contact", label: "联络方式" },
+  { href: "/about", label: "制度" },
+  { href: "/blog", label: "文告" },
+  { href: "/projects", label: "建设" },
+  { href: "/contact", label: "联系" },
 ];
 
 export function Footer() {
@@ -45,7 +45,7 @@ export function Footer() {
               <p className="text-sm font-semibold text-foreground">联络</p>
               <div className="mt-4 space-y-3 text-sm leading-7 text-muted-foreground">
                 <p>核心宗旨：{studioProfile.corePurpose}</p>
-                <p>联络邮箱：{studioProfile.publicEmail}</p>
+                <p>联系邮箱：{studioProfile.publicEmail}</p>
                 <p>重建时间：{studioProfile.rebuiltAt}</p>
               </div>
             </div>
